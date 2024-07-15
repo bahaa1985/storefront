@@ -22,7 +22,7 @@ bell.addEventListener("click", () => {
 	notifications.classList.toggle("hidden");
 	notifications_count.classList.add("hidden");
 });
-
+//test
 //dark_mode:
 const body = document.getElementsByTagName("body")[0];
 const moon = document.getElementById("moon");
