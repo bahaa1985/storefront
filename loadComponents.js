@@ -6,11 +6,13 @@ function loadHTML(elementId, fileName) {
         if (xhr.readyState === 4 && xhr.status === 200) {
             element.innerHTML = xhr.responseText;
             const scripts = element.getElementsByTagName('script');
-            for (let i = 0; i < scripts.length; i++) {
-                const script = document.createElement('script');
-                script.src = scripts[i].src;
-                document.body.appendChild(script);
-            }
+            if(typeof(scripts)!=='null'){
+                for (let i = 0; i < scripts.length; i++) {
+                    const script = document.createElement('script');
+                    script.src = scripts[i].src;
+                    document.body.appendChild(script);
+                }
+            }            
         }
     };
     xhr.send();
@@ -18,6 +20,6 @@ function loadHTML(elementId, fileName) {
 
 document.addEventListener("DOMContentLoaded", function() {
     loadHTML('navbar', 'navbar.html');
-    // loadHTML('main', 'main.html');
+    loadHTML('hero', 'hero.html');
     // loadHTML('footer', 'footer.html');
 });
