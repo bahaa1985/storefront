@@ -21,5 +21,6 @@ function loadHTML(elementId, fileName) {
 document.addEventListener("DOMContentLoaded", function() {
     loadHTML('navbar', 'navbar.html');
     loadHTML('hero', 'hero.html');
+    loadHTML('shop','shop.html');
     // loadHTML('footer', 'footer.html');
 });
