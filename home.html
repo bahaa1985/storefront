@@ -7,9 +7,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-            darkMode: 'class'
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }             
+            }
+          }
         }
-    </script>
+      </script>
 </head>
 <body>
     <div id="navbar"></div>
