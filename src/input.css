@@ -1,0 +1,10 @@
+/* src/input.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .page-link {
+        @apply my-3 text-slate-300 hover:text-white
+    }
+}

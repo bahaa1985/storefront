@@ -1,9 +1,10 @@
+<head>
+	<link href="dist/output.css" rel="stylesheet">
+</head>
 <body>
     <!-- navbar -->
 	<nav id="nav_bar" class="bg-slate-300 dark:bg-slate-900 w-full h-16 p-1 fixed flex no-wrap justify-between lg:justify-start top-0 left-0 z-10">
-		<!-- 
-		Hamburger button
-	-->
+		<!-- Hamburger button-->
 		<div class="my-auto md:hidden">
 			<button id="hamburger_button">
 				<svg id="hamburger_lines" class="h-12 w-12 stroke-gray-800 dark:stroke-gray-300" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -26,7 +27,7 @@
 		<!-- 
 		navigation links
 	-->
-		<div class="px-3 my-0 mr-auto hidden md:flex">
+		<div class="px-3 my-0 mx-auto hidden md:flex">
 			<ul class="flex justify-between m-0 text-gray-800 dark:text-gray-300">
 
 				<li class="py-5 px-3 hover:text-[#fff] hover:bg-slate-700 leading-3"><a href="#">Home</a></li>
@@ -51,72 +52,9 @@
 					<path d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z" />
 				</svg>
 			</div>
-			<!-- 
-		notification bell
-	-->
-			<span id="notifications_count" class="relative left-3 z-10 bg-red-600 text-[#fff] h-6 min-w-6 my-1 text-center rounded-full">4</span>
-			<svg id="bell" viewBox="0 0 448 512" title="bell" class="relative h-6 min-w-6 my-auto bell_ring cursor-pointer fill-gray-800 dark:fill-gray-300">
-				<path d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z" />
-			</svg>
-			<span class="my-auto md:block text-gray-800 dark:text-gray-300 hidden">Welcome,  user456!</span>
-		</div>
+			</div>
 	</nav>
 
-	<!-- notifications-->
-	<div id="notifications" class="absolute top-16 right-auto sm:right-5 w-11/12 md:w-6/12 lg:w-3/12  hidden text-base">
-		<div class="bg-slate-300 text-gray-900 hover:bg-slate-400 dark:bg-slate-900 dark:text-gray-300 dark:hover:bg-slate-700 p-2 cursor-pointer ">
-			<div class="flex justify-start">
-				<img class="mx-3 w-16 h-16 rounded-full" src="https://images.unsplash.com/photo-1596215143922-eedeaba0d91c?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTAwMTgzODB8&ixlib=rb-4.0.3&q=85" />
-				<div class="block">
-					<p class="mx-3 font-medium">Michelle</p>
-					<p class="mx-3">Created new project</p>
-				</div>
-			</div>
-			<div class="flex justify-between">
-				<span class="mx-3">8.00 pm</span>
-				<a class="mx-3" href="#">Mark as read</a>
-			</div>
-		</div>
-		<div class="bg-slate-300 text-gray-900 hover:bg-slate-400 dark:bg-slate-900 dark:text-gray-300 dark:hover:bg-slate-700 p-2 cursor-pointer">
-			<div class="flex justify-start">
-				<img class="mx-3 w-16 h-16 rounded-full" src="https://images.unsplash.com/photo-1566753323558-f4e0952af115?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTAwMjU3OTV8&ixlib=rb-4.0.3&q=85" />
-				<div class="block">
-					<p class="mx-3 font-medium">Dan</p>
-					<p class="mx-3">Created new time line</p>
-				</div>
-			</div>
-			<div class="flex justify-between">
-				<span class="mx-3">2 hours ago</span>
-				<a class="mx-3" href="#">Mark as read</a>
-			</div>
-		</div>
-		<div class="bg-slate-300 text-gray-900 hover:bg-slate-400 dark:bg-slate-900 dark:text-gray-300 dark:hover:bg-slate-700 p-2 cursor-pointer">
-			<div class="flex justify-start">
-				<img class="mx-3 w-16 h-16 rounded-full" src="https://images.unsplash.com/photo-1595784279873-62b38b5e7cd6?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTAwMjU3MzF8&ixlib=rb-4.0.3&q=85" />
-				<div class="block">
-					<p class="mx-3 font-medium">Gloria</p>
-					<p class="mx-3">Added new diagram</p>
-				</div>
-			</div>
-			<div class="flex justify-between">
-				<span class="mx-3">4 hours ago</span>
-				<a class="mx-3" href="#">Mark as read</a>
-			</div>
-		</div>
-		<div class="bg-slate-300 text-gray-900 hover:bg-slate-400 dark:bg-slate-900 dark:text-gray-300 dark:hover:bg-slate-700 p-2 cursor-pointer">
-			<div class="flex justify-start">
-				<img class="mx-3 w-16 h-16 rounded-full" src="https://images.unsplash.com/photo-1596075780750-81249df16d19?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTAwMjU5MzJ8&ixlib=rb-4.0.3&q=85" />
-				<div class="block">
-					<p class="mx-3 font-medium">John</p>
-					<p class="mx-3">Approved your request</p>
-				</div>
-			</div>
-			<div class="flex justify-between">
-				<span class="mx-3">Yestersay</span>
-				<a class="mx-3" href="#">Mark as read</a>
-			</div>
-		</div>
-	</div>
 	<!-- Hambruger items -->
 	<div id="hamburger_items" class="w-full my-auto absolute top-16 left-0  hidden md:hidden  bg-gray-300 dark:bg-gray-900">
 		<ul class="flex flex-col items-center text-center text-gray-800 dark:text-gray-300">
