@@ -3,40 +3,40 @@
     <link href="dist/output.css" rel="stylesheet">
 </head>
 <body class="w-full">
-    <div class="w-auto mt-8 flex flex-row justify-center xs:flex-wrap sm:flex-nowrap space-x-2 
+    <div class="w-auto mt-8 flex flex-row justify-between flex-wrap gap-2
     text-white overflow-x-auto">
         
-        <div class="relative h-64 w-40 sm:w-44 bg-cover bg-center text-center">
-        <img src="https://tailwindui.com/img/ecommerce-images/home-page-01-category-01.jpg" />
-           <span class="text-slate-600">New Arrivals</span>
+        <div style="background-image:url('https://tailwindui.com/img/ecommerce-images/home-page-01-category-01.jpg');"
+        class="h-64 w-40 sm:w-44 bg-cover bg-center text-center">    
+           <span class="relative top-[90%] text-slate-600">New Arrivals</span>
        </div>
         <div style="background-image:url('https://tailwindui.com/img/ecommerce-images/home-page-01-category-02.jpg');"
          class="h-64 w-40 sm:w-44 bg-cover bg-center text-center">
-            <span class="relative top-[80%] text-slate-600">Productivity</span>
+            <span class="relative top-[90%] text-slate-600">Productivity</span>
         </div>
         <div style="background-image: url('https://tailwindui.com/img/ecommerce-images/home-page-01-category-04.jpg');"
          class="h-64 w-40 sm:w-44 bg-cover bg-center text-center">
-            <span class="relative top-[80%] text-slate-600">Workspace</span>
+            <span class="relative top-[90%] text-slate-600">Workspace</span>
         </div>
         <div style="background-image: url('https://tailwindui.com/img/ecommerce-images/home-page-01-category-05.jpg');"
          class="h-64 w-40 sm:w-44 bg-cover bg-center text-center">
-            <span class="relative top-[80%] text-slate-600">Accessories</span>
+            <span class="relative top-[90%] text-slate-600">Accessories</span>
         </div>
         <div style="background-image: url('https://tailwindui.com/img/ecommerce-images/home-page-01-category-03.jpg');"
          class="h-64 w-40 sm:w-44 bg-cover bg-center text-center">
-            <span class="relative top-[80%] text-slate-600">Sale</span>
+            <span class="relative top-[90%] text-slate-600">Sale</span>
         </div>
     </div>
 
     <!-- desk hero -->
-    <div class="relative w-[90%] mx-auto my-8">
-        <img src="https://t.ly/-DR7f" class="w-full object-fit brightness-50" style="max-height: 500px;"/>
-         <div class="absolute top-2/4 -translate-y-2/4 w-full flex flex-col mx-auto p-2">
-            <h1 class="mx-auto my-2 md:my-4 text-[#fff] xs:text-3xl md:text-5xl">Level up your desk</h1>
-            <h3 class="mx-auto my-2 md:my-4 text-[#fff]  xs:text-2xl md:text-2xl text-center xs:leading-5 md:leading-10">Make your desk beautiful and organized. Post a picture to social media and watch it 
+    <div class="relative w-[90%] xs:h-80 sm:h-[550px] mx-auto my-8">
+        <img src="https://t.ly/-DR7f" class="w-full xs:h-80 sm:h-[550px]  object-fit brightness-50"/>
+         <div class="absolute top-2/4 -translate-y-2/4 w-full flex flex-col mx-auto xs:p-4 md:p-20">
+            <h1 class="mx-auto my-2 sm:my-4 text-[#fff] xs:text-3xl md:text-5xl">Level up your desk</h1>
+            <h3 class="mx-auto my-2 sm:my-4 text-[#fff]  xs:text-2xl md:text-2xl text-center xs:leading-5 md:leading-10">Make your desk beautiful and organized. Post a picture to social media and watch it 
                 get more likes than life-changing announcements. Reflect on the shallow nature of existence. 
                 At least you have a really nice desk setup.</h3>
-            <button class="mx-auto my-2 md:my-4 xs:px-4 md:px-6 py-2 xs:text-sm md:text-xl  bg-white rounded-md text-[#000]">Shop Workspace</button>
+            <button class="mx-auto w-[80%] sm:w-[25%] my-2 sm:my-4 px-4 py-2 xs:text-sm md:text-xl  bg-white rounded-md text-[#000]">Shop Workspace</button>
         </div> 
     </div>
 
@@ -73,14 +73,14 @@
      </div>
 
       <!-- Simple productivity hero -->
-    <section class="relative w-[90%] xs:h-[600] mx-auto my-8">
-        <img src="https://rb.gy/tozt5d" class="w-full  object-fit brightness-50" style="max-height: 500px;"/>
-         <div class="absolute top-2/4 -translate-y-2/4 w-full flex flex-col mx-auto p-2">
+    <section class="relative w-[90%] mx-auto my-8">
+        <img src="https://rb.gy/tozt5d" class="w-full xs:h-80 sm:h-[550px]  object-fit brightness-50"/>
+         <div class="absolute top-2/4 -translate-y-2/4 w-full flex flex-col mx-auto xs:p-4 md:p-20">
             <h1 class="mx-auto my-2 sm:my-4 text-[#fff] xs:text-3xl md:text-5xl">Simple productivity</h1>
-            <h3 class="mx-auto my-2 sm:my-4 text-[#fff]  xs:text-2xl md:text-2xl text-center leading-10">Endless tasks, limited hours, a single piece of paper. 
+            <h3 class="mx-auto my-2 sm:my-4 text-[#fff]  xs:text-xl md:text-2xl text-center xs:leading-5 md:leading-10">Endless tasks, limited hours, a single piece of paper. 
                 Not really a haiku, but we're doing our best here. No kanban boards, burndown charts, or tangled flowcharts with our Focus system. Just the undeniable urge to fill empty circles.
             </h3>
-            <button class="mx-auto my-2 sm:my-4 bg-white rounded-md text-[#000] sm:text-xl px-6 py-2">Shop Focus</button>
+            <button class="mx-auto w-[80%] sm:w-[25%] my-2 sm:my-4 px-4 py-2 xs:text-sm md:text-xl  bg-white rounded-md text-[#000]">Shop Focus</button>
         </div> 
     </section>
 
