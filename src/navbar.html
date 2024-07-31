@@ -27,15 +27,13 @@
 		<!-- 
 		navigation links
 	-->
-		<div class="px-3 my-0 mx-auto hidden text-center md:flex basis-1/2">
-			<ul class="w-full flex justify-center mx-auto text-gray-800 dark:text-gray-300">
-
-				<li class="w-[25%] py-5 px-3 hover:text-[#fff] hover:bg-slate-700 leading-3"><a href="#">Women</a></li>
-				<li class="w-[25%] py-5 px-3 hover:text-[#fff] hover:bg-slate-700 leading-3"><a href="#">Men</a></li>
-				<li class="w-[25%] py-5 px-3 hover:text-[#fff] hover:bg-slate-700 leading-3"><a href="#">Company</a></li>
-				<li class="w-[25%] py-5 px-3  hover:text-[#fff] hover:bg-slate-700 leading-3"><a href="#">Store</a></li>
+		<div class="px-3 my-0 mx-auto hidden md:visible text-center md:flex md:basis-1/2">
+			<ul class="w-[90%] flex justify-center mx-auto text-gray-800 dark:text-gray-300">
+				<li class=" py-5 px-3 hover:text-[#fff] hover:bg-slate-700 leading-3 cursor-pointer"><a href="#">Women</a></li>
+				<li class=" py-5 px-3 hover:text-[#fff] hover:bg-slate-700 leading-3 cursor-pointer"><a href="#">Men</a></li>
+				<li class=" py-5 px-3 hover:text-[#fff] hover:bg-slate-700 leading-3 cursor-pointer"><a href="#">Company</a></li>
+				<li class=" py-5 px-3  hover:text-[#fff] hover:bg-slate-700 leading-3 cursor-pointer"><a href="#">Store</a></li>
 			</ul>
-
 		</div>
 
 		<div class="px-3 flex no-wrap basis-1/4">
@@ -56,15 +54,14 @@
 	</nav>
 
 	<!-- Hambruger items -->
-	<div id="hamburger_items" class="w-full my-auto absolute top-16 left-0  hidden md:hidden  bg-gray-300 dark:bg-gray-900">
-		<ul class="flex flex-col items-center text-center text-gray-800 dark:text-gray-300">
-			<li class="w-full mx-5 py-2 hover:text-[#fff] hover:bg-slate-700">User_456</li>
-			<li class="w-full mx-5 py-2 hover:text-[#fff] hover:bg-slate-700">Home</li>
-			<li class="w-full mx-5 py-2 hover:text-[#fff] hover:bg-slate-700">Team</li>
-			<li class="w-full mx-5 py-2 hover:text-[#fff] hover:bg-slate-700">Projects</li>
-			<li class="w-full mx-5 py-2 hover:text-[#fff] hover:bg-slate-700">Messages</li>
+	<div id="hamburger_items" class="w-full my-auto absolute top-16 left-0 z-10 h-0  bg-gray-300 dark:bg-gray-900">
+		<ul class="myul relative flex flex-col items-center text-center h-15 z-10 text-gray-800 dark:text-gray-300">
+			<li class="liclass w-full  mx-5 py-2 hover:text-[#fff] hover:bg-slate-700"><a>Men</a></li>
+			<li class="liclass w-full  mx-5 py-2 hover:text-[#fff] hover:bg-slate-700"><a>Women</a></li>
+			<li class="liclass w-full  mx-5 py-2 hover:text-[#fff] hover:bg-slate-700"><a>Company</li>
+			<li class="liclass w-full  mx-5 py-2 hover:text-[#fff] hover:bg-slate-700"><a>Store</a></li>
 			<!-- search bar -->
-			<li class="mx-5 py-2">
+			<li class="liclass mx-5 py-2">
 				<div class="flex justify-between my-auto">
 					<svg viewBox="0 0 512 512" class="w-6 cursor-pointer p-0.5 rounded-l-md bg-[#fff]" title="search" fill="#1f2937">
 						<path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" />
@@ -74,5 +71,6 @@
 			</li>
 		</ul>
 	</div>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="navbar.js"></script>
 </body>
