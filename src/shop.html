@@ -8,30 +8,45 @@
     </style>
 </head>
 <body class="w-full">
-    <div class="w-auto my-20 flex flex-row justify-between flex-wrap gap-2
-    text-white overflow-x-auto">
-        
-        <div style="background-image:url('https://tailwindui.com/img/ecommerce-images/home-page-01-category-01.jpg');"
-        class="h-64 w-40 sm:w-44 bg-cover bg-center text-center">    
-           <span class="relative top-[90%] text-slate-600 font-semibold">New Arrivals</span>
-       </div>
-        <div style="background-image:url('https://tailwindui.com/img/ecommerce-images/home-page-01-category-02.jpg');"
-         class="h-64 w-40 sm:w-44 bg-cover bg-center text-center">
-            <span class="relative top-[90%] text-slate-600 font-semibold">Productivity</span>
+    <!-- Main hero 100vh -->
+    <section class="relative w-auto h-screen mx-auto">
+        <img class="w-full h-screen object-fit brightness-50" src='https://t.ly/LAcW5'/>
+        <div class="absolute top-2/4 -translate-y-2/4
+        h-60 w-full flex flex-col xs:space-y-6 md:space-y-10 p-2">
+            <h1 class="mx-auto text-[#fff] text-3xl md:text-5xl font-bold text-center ">New arrivals are here</h1>
+            <h3 class="mx-auto text-[#fff] text-xl md:text-2xl text-center leading-10 p-4">The new arrivals have, well, newly arrived. Check out the latest options from our summer small-batch release while they're still in stock.</h3>
+            <button class="mx-auto bg-white rounded-md text-[#000] text-xl px-6 py-2">Shop Aew Arrivals</button>
+        </div>        
         </div>
-        <div style="background-image: url('https://tailwindui.com/img/ecommerce-images/home-page-01-category-04.jpg');"
-         class="h-64 w-40 sm:w-44 bg-cover bg-center text-center">
-            <span class="relative top-[90%] text-slate-600 font-semibold">Workspace</span>
+    </section>
+
+    <!-- Shop by Category -->
+     <section class="relative w-[90%] mx-auto my-20">
+        <h3 class="my-4 text-xl sm:text-2xl font-bold">Shop by Category</h3>
+        <div class="w-auto my-4 flex flex-row justify-between flex-wrap gap-2 text-white overflow-x-auto">
+            <div style="background-image:url('https://tailwindui.com/img/ecommerce-images/home-page-01-category-01.jpg');"
+            class="h-64 w-40 sm:w-44 bg-cover bg-center text-center">    
+               <span class="relative top-[90%] text-slate-600 font-semibold">New Arrivals</span>
+           </div>
+            <div style="background-image:url('https://tailwindui.com/img/ecommerce-images/home-page-01-category-02.jpg');"
+             class="h-64 w-40 sm:w-44 bg-cover bg-center text-center">
+                <span class="relative top-[90%] text-slate-600 font-semibold">Productivity</span>
+            </div>
+            <div style="background-image: url('https://tailwindui.com/img/ecommerce-images/home-page-01-category-04.jpg');"
+             class="h-64 w-40 sm:w-44 bg-cover bg-center text-center">
+                <span class="relative top-[90%] text-slate-600 font-semibold">Workspace</span>
+            </div>
+            <div style="background-image: url('https://tailwindui.com/img/ecommerce-images/home-page-01-category-05.jpg');"
+             class="h-64 w-40 sm:w-44 bg-cover bg-center text-center">
+                <span class="relative top-[90%] text-slate-600 font-semibold">Accessories</span>
+            </div>
+            <div style="background-image: url('https://tailwindui.com/img/ecommerce-images/home-page-01-category-03.jpg');"
+             class="h-64 w-40 sm:w-44 bg-cover bg-center text-center">
+                <span class="relative top-[90%] text-slate-600 font-semibold">Sale</span>
+            </div>
         </div>
-        <div style="background-image: url('https://tailwindui.com/img/ecommerce-images/home-page-01-category-05.jpg');"
-         class="h-64 w-40 sm:w-44 bg-cover bg-center text-center">
-            <span class="relative top-[90%] text-slate-600 font-semibold">Accessories</span>
-        </div>
-        <div style="background-image: url('https://tailwindui.com/img/ecommerce-images/home-page-01-category-03.jpg');"
-         class="h-64 w-40 sm:w-44 bg-cover bg-center text-center">
-            <span class="relative top-[90%] text-slate-600 font-semibold">Sale</span>
-        </div>
-    </div>
+     </section>
+    
 
     <!-- desk hero -->
     <section class="relative w-[90%] mx-auto my-20">
@@ -64,7 +79,7 @@
                 <img src="https://tailwindui.com/img/ecommerce-images/home-page-01-collection-02.jpg" class="w-full h-56 sm:h-72 object-center object-cover"/>
                 <h3 class="text-xl my-4 font-semibold">Organized Desk Collection</h3>
                 <p class="text-left">
-                    Keep your phone, keys, and wallet together, so you can lose everything at once.
+                    The rest of the house will still be a mess, but your desk will look great.
                 </p>
             </div>
             <div class="w-full sm:w-[30%] xs:my-2">
