@@ -10,14 +10,12 @@ const search = document.getElementById("search");
 const NAV_BAR = document.getElementById("nav_bar");
 const lis=document.querySelectorAll('.liclass');
 //Hamburger button click event handler to show or hide it:
+
+let tween = gsap.to(hamburger_items,{
+	height:'auto',duration:0.5,ease:'none'	
+}).paused(true);
 let expanded=false;
-let tween = gsap.to(myul,{
-	height:'auto',duration:0.5,delay:-0.5	
-})
-let tween2=gsap.to(lis,{
-	opacity:'100%',stagger:0.1
-})
-tween.pause();tween2.pause();
+
 hamburger.addEventListener("click", () => {
 	// hamburger_items.classList.toggle("hidden");
 	hamburger_lines.classList.toggle("hidden");
@@ -25,17 +23,16 @@ hamburger.addEventListener("click", () => {
 	// notifications.classList.add("hidden");
 	
 	//gsap animations:
+	
+
+
 	if(!expanded){
 		tween.play();
-		tween2.play();
 		expanded=true;
-		console.log(tween2.progress);
 	}
 	else{		
-		tween.reverse();
-		tween2.reverse();				
+		tween.reverse();				
 		expanded=false;
-		console.log(tween2.progress);
 	}
 });
 // to show to hide notifications when clicking bell icon:
