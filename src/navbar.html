@@ -3,9 +3,9 @@
 </head>
 <body>
     <!-- navbar -->
-	<nav id="nav_bar" class="bg-slate-300 dark:bg-slate-900 w-full h-16 p-1 fixed flex no-wrap justify-between lg:justify-start top-0 left-0 z-10">
+	<nav id="nav_bar" class="bg-emerald-600 w-full h-16 p-1 fixed flex no-wrap justify-between lg:justify-start top-0 left-0 z-10">
 		<!-- Hamburger button-->
-		<div class="my-auto md:hidden">
+		<div class="my-auto md:hidden basis-1/4">
 			<button id="hamburger_button">
 				<svg id="hamburger_lines" class="h-12 w-12 stroke-gray-800 dark:stroke-gray-300" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
 					<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -19,8 +19,8 @@
 		<!-- 
 		logo
 	-->
-		<div class="px-3 my-0 basis-1/4">
-			<img src="https://images.unsplash.com/photo-1602934445884-da0fa1c9d3b3?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTAxNzEyNzZ8&ixlib=rb-4.0.3&q=85" class="rounded-full max-w-14 h-14" />
+		<div class="px-3 my-0 basis-1/2 sm:basis-1/4">
+			<img class="mx-auto sm:mx-0 rounded-full max-w-14 h-14" src="https://images.unsplash.com/photo-1602934445884-da0fa1c9d3b3?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTAxNzEyNzZ8&ixlib=rb-4.0.3&q=85" />
 
 		</div>
 
@@ -45,21 +45,25 @@
 				<input type="text" class="w-36 rounded-r-md bg-[#fff] outline-none" />
 			</div>
 			<!-- dark mode -->
-			<div class="my-auto rounded-full border border-solid border-gray-800 dark:border-gray-300">
+			<!-- <div class="my-auto rounded-full border border-solid border-gray-800 dark:border-gray-300">
 				<svg viewBox="0 0 512 512" width="100" title="moon" id="moon" class="h-6 w-6 cursor-pointer p-0.5 rounded-full fill-gray-500 dark:fill-gray-300">
 					<path d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z" />
 				</svg>
-			</div>
-			</div>
+			</div> -->
+			<!-- cart -->
+			 <button class="ml-auto">
+				<i class="fa-solid fa-cart-shopping fa-xl"></i>
+			 </button>
+		</div>
 	</nav>
 
 	<!-- Hambruger items -->
-	<div id="hamburger_items" class="w-full h-0 overflow-y-hidden my-auto absolute top-16 left-0 text-center z-10 ">
-		<ul class="myul relative flex flex-col items-center bg-gray-300 dark:bg-gray-900 z-10 text-gray-800 dark:text-gray-300">
-			<li class="liclass w-full  py-2  hover:text-[#fff] hover:bg-slate-700"><a>Men</a></li>
-			<li class="liclass w-full  py-2  hover:text-[#fff] hover:bg-slate-700"><a>Women</a></li>
-			<li class="liclass w-full  py-2  hover:text-[#fff] hover:bg-slate-700"><a>Company</li>
-			<li class="liclass w-full  py-2  hover:text-[#fff] hover:bg-slate-700"><a>Store</a></li>
+	<div id="hamburger_items" class="fixed w-full h-0 overflow-y-hidden my-auto top-16 left-0 text-center z-10 ">
+		<ul class="myul w-full flex flex-col items-center px-2 bg-emerald-600 z-10 text-gray-800 dark:text-gray-300">
+			<li class="liclass w-full  py-2 border-b border-gray-900 border-solid  hover:text-[#fff] hover:bg-slate-700"><a>Men</a></li>
+			<li class="liclass w-full  py-2 border-b border-gray-900 border-solid hover:text-[#fff] hover:bg-slate-700"><a>Women</a></li>
+			<li class="liclass w-full  py-2 border-b border-gray-900 border-solid hover:text-[#fff] hover:bg-slate-700"><a>Company</li>
+			<li class="liclass w-full  py-2 border-b border-gray-900 border-solid hover:text-[#fff] hover:bg-slate-700"><a>Store</a></li>
 			<!-- search bar -->
 			<li class="liclass mx-5 py-2">
 				<div class="flex justify-between my-auto">

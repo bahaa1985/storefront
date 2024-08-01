@@ -598,6 +598,14 @@ video {
   top: 90%;
 }
 
+.top-\[80\%\] {
+  top: 80%;
+}
+
+.top-\[100\%\] {
+  top: 100%;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -654,6 +662,10 @@ video {
 
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+
+.ml-auto {
+  margin-left: auto;
 }
 
 .flex {
@@ -760,12 +772,40 @@ video {
   width: 100%;
 }
 
+.w-14 {
+  width: 3.5rem;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[250\] {
+  width: 250;
+}
+
+.w-\[200\] {
+  width: 200;
+}
+
+.w-\[200px\] {
+  width: 200px;
+}
+
 .max-w-14 {
   max-width: 3.5rem;
 }
 
+.shrink-0 {
+  flex-shrink: 0;
+}
+
 .basis-1\/4 {
   flex-basis: 25%;
+}
+
+.basis-1\/2 {
+  flex-basis: 50%;
 }
 
 .-translate-y-2\/4 {
@@ -801,6 +841,10 @@ video {
   justify-content: space-between;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -823,6 +867,10 @@ video {
 
 .overflow-y-hidden {
   overflow-y: hidden;
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll;
 }
 
 .rounded {
@@ -863,6 +911,10 @@ video {
   border-bottom-width: 1px;
 }
 
+.border-s {
+  border-inline-start-width: 1px;
+}
+
 .border-solid {
   border-style: solid;
 }
@@ -880,6 +932,16 @@ video {
 .border-slate-600 {
   --tw-border-opacity: 1;
   border-color: rgb(71 85 105 / var(--tw-border-opacity));
+}
+
+.border-gray-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(17 24 39 / var(--tw-border-opacity));
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .bg-\[\#fff\] {
@@ -1026,6 +1088,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1067,6 +1134,15 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-emerald-600 {
+  --tw-text-opacity: 1;
+  color: rgb(5 150 105 / var(--tw-text-opacity));
+}
+
+.decoration-emerald-600 {
+  text-decoration-color: #059669;
+}
+
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -1088,9 +1164,30 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:static {
+    position: static;
+  }
+
+  .sm\:top-0 {
+    top: 0px;
+  }
+
   .sm\:my-4 {
     margin-top: 1rem;
     margin-bottom: 1rem;
+  }
+
+  .sm\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .sm\:block {
+    display: block;
+  }
+
+  .sm\:flex {
+    display: flex;
   }
 
   .sm\:h-72 {
@@ -1119,6 +1216,14 @@ video {
 
   .sm\:w-\[35\%\] {
     width: 35%;
+  }
+
+  .sm\:w-\[22\%\] {
+    width: 22%;
+  }
+
+  .sm\:basis-1\/4 {
+    flex-basis: 25%;
   }
 
   .sm\:flex-row {
