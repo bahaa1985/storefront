@@ -23,9 +23,6 @@ hamburger.addEventListener("click", () => {
 	// notifications.classList.add("hidden");
 	
 	//gsap animations:
-	
-
-
 	if(!expanded){
 		tween.play();
 		expanded=true;
@@ -45,7 +42,7 @@ hamburger.addEventListener("click", () => {
 //test
 //dark_mode:
 const body = document.getElementsByTagName("body")[0];
-const moon = document.getElementById("moon");
+// const moon = document.getElementById("moon");
 
 if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
 	//get the system mode
@@ -54,6 +51,6 @@ if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
 	body.classList.remove("dark");
 }
 //toggle dark mode when clicking moon icon:
-moon.addEventListener("click", () => {
-	body.classList.toggle("dark");
-});
+// moon.addEventListener("click", () => {
+// 	body.classList.toggle("dark");
+// });

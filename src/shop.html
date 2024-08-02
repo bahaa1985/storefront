@@ -8,14 +8,14 @@
     </style>
 </head>
 <body class="w-full">
-    <div class="block fixed z-20 top-[400px] left-[90%] w-18 h-18 bg-emerald-600 text-lg rounded-full">
-        Up
+    <div id="up-button" class="hidden fixed z-20 top-[80%] left-[85%] sm:left-[90%] p-2 sm:p-3 bg-emerald-600 text-lg rounded-full">
+        <i class="fa-solid fa-arrow-up fa-xl"></i>
     </div>
     <!-- Main hero 100vh -->
     <section class="relative w-auto h-screen mx-auto">
         <img class="w-full h-screen object-fit brightness-50" src='https://t.ly/LAcW5'/>
         <div class="absolute top-2/4 -translate-y-2/4
-        h-60 w-full flex flex-col xs:space-y-6 md:space-y-10 p-2">
+        h-60 w-full flex flex-col xs:space-y-6 md:space-y-10 px-2 sm:px-20">
             <h1 class="mx-auto text-[#fff] text-3xl md:text-5xl font-bold text-center ">New arrivals are here</h1>
             <h3 class="mx-auto text-[#fff] text-xl md:text-2xl text-center leading-10 p-4">The new arrivals have, well, newly arrived. Check out the latest options from our summer small-batch release while they're still in stock.</h3>
             <button class="mx-auto bg-white rounded-md text-[#000] text-xl px-6 py-2">Shop Aew Arrivals</button>
@@ -56,9 +56,9 @@
     
 
     <!-- desk hero -->
-    <section class="relative w-[90%] mx-auto my-20">
+    <section id="desk-hero-section" class="relative w-[90%] mx-auto my-20">
         <img src="https://t.ly/-DR7f" class="w-full h-[450px] sm:h-[550px]  object-fit brightness-50"/>
-         <div class="absolute top-2/4 -translate-y-2/4 w-full flex flex-col mx-auto py-4 px-4 sm:p-20">
+         <div class="absolute top-2/4 -translate-y-2/4 w-full flex flex-col mx-auto py-4 px-4 sm:px-20">
             <h1 class="mx-auto my-2 sm:my-4 text-[#fff] text-3xl md:text-5xl font-bold">Level up your desk</h1>
             <h3 class="mx-auto my-2 sm:my-4 text-[#fff] text-xl md:text-2xl text-center xs:leading-5 md:leading-10">Make your desk beautiful and organized. Post a picture to social media and watch it 
                 get more likes than life-changing announcements. Reflect on the shallow nature of existence. 
@@ -244,4 +244,5 @@
             <p>Copyright © 2021 Your Company, Inc.</p>
         </div>
      </footer>
+     <script src="shop.js"></script>
 </body>
