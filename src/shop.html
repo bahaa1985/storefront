@@ -1,5 +1,4 @@
 <head>
-   
     <link href="dist/output.css" rel="stylesheet">
     <style>
         img{
@@ -7,242 +6,248 @@
         }
     </style>
 </head>
-<body class="w-full">
-    <div id="up-button" class="hidden fixed z-20 top-[80%] left-[85%] sm:left-[90%] p-2 sm:p-3 bg-emerald-600 text-lg rounded-full">
-        <i class="fa-solid fa-arrow-up fa-xl"></i>
-    </div>
-    <!-- Main hero 100vh -->
-    <section class="relative w-auto h-screen mx-auto">
-        <img class="w-full h-screen object-fit brightness-50" src='https://t.ly/LAcW5'/>
-        <div class="absolute top-2/4 -translate-y-2/4
-        h-60 w-full flex flex-col xs:space-y-6 md:space-y-10 px-2 sm:px-20">
-            <h1 class="mx-auto text-[#fff] text-3xl md:text-5xl font-bold text-center ">New arrivals are here</h1>
-            <h3 class="mx-auto text-[#fff] text-xl md:text-2xl text-center leading-10 p-4">The new arrivals have, well, newly arrived. Check out the latest options from our summer small-batch release while they're still in stock.</h3>
-            <button class="mx-auto bg-white rounded-md text-[#000] text-xl px-6 py-2">Shop Aew Arrivals</button>
-        </div>        
-        </div>
-    </section>
 
-    <!-- Shop by Category -->
-     <section class="relative w-[90%] mx-auto my-20">
-        <div class="sm:flex sm:flex-row sm:justify-between">
-            <h3 class="my-4 text-xl sm:text-2xl font-bold">Shop by Category</h3>
-            <h3 class="absolute sm:static top-[100%] left-0 my-4 text-sm font-bold text-emerald-600"><a class="decoration-emerald-600" href="#">Browse all categories</a></h3>
-        </div>
+<body  class="w-full">
+    <!-- <div id="smooth-wraper">
+    <div id="smooth-content"> -->
         
-        <div class="w-auto my-4 flex flex-row justify-between gap-2 text-white overflow-x-scroll">
-            <div style="background-image:url('https://tailwindui.com/img/ecommerce-images/home-page-01-category-01.jpg');"
-            class="h-64 w-[200px] shrink-0 border border-gray-300 bg-cover bg-center text-center rounded-sm">    
-               <span class="relative top-[90%] text-slate-600 font-semibold">New Arrivals</span>
-           </div>
-            <div style="background-image:url('https://tailwindui.com/img/ecommerce-images/home-page-01-category-02.jpg');"
-             class="h-64 w-[200px] shrink-0 border border-gray-300 bg-cover bg-center text-center rounded-sm">
-                <span class="relative top-[90%] text-slate-600 font-semibold">Productivity</span>
+        <!-- Main hero 100vh -->
+        <section id="main-hero" class="relative w-auto h-screen mx-auto">
+            <img class="w-full h-screen object-fit brightness-50" src='https://t.ly/LAcW5'/>
+            <div class="absolute top-2/4 -translate-y-2/4
+            h-60 w-full flex flex-col xs:space-y-6 md:space-y-10 px-2 sm:px-20">
+                <h1 class="mx-auto text-[#fff] text-3xl md:text-5xl font-bold text-center ">New arrivals are here</h1>
+                <h3 class="mx-auto text-[#fff] text-xl md:text-2xl text-center leading-10 p-4">The new arrivals have, well, newly arrived. Check out the latest options from our summer small-batch release while they're still in stock.</h3>
+                <button class="mx-auto bg-white rounded-md text-[#000] text-xl px-6 py-2">Shop Aew Arrivals</button>
+            </div>        
             </div>
-            <div style="background-image: url('https://tailwindui.com/img/ecommerce-images/home-page-01-category-04.jpg');"
-             class="h-64 w-[200px] shrink-0 border border-gray-300 bg-cover bg-center text-center rounded-sm">
-                <span class="relative top-[90%] text-slate-600 font-semibold">Workspace</span>
-            </div>
-            <div style="background-image: url('https://tailwindui.com/img/ecommerce-images/home-page-01-category-05.jpg');"
-             class="h-64 w-[200px] shrink-0 border border-gray-300 bg-cover bg-center text-center rounded-sm">
-                <span class="relative top-[90%] text-slate-600 font-semibold">Accessories</span>
-            </div>
-            <div style="background-image: url('https://tailwindui.com/img/ecommerce-images/home-page-01-category-03.jpg');"
-             class="h-64 w-[200px] shrink-0 border border-gray-300 bg-cover bg-center text-center rounded-sm">
-                <span class="relative top-[90%] text-slate-600 font-semibold">Sale</span>
-            </div>
-        </div>
-     </section>
+        </section>
     
-
-    <!-- desk hero -->
-    <section id="desk-hero-section" class="relative w-[90%] mx-auto my-20">
-        <img src="https://t.ly/-DR7f" class="w-full h-[450px] sm:h-[550px]  object-fit brightness-50"/>
-         <div class="absolute top-2/4 -translate-y-2/4 w-full flex flex-col mx-auto py-4 px-4 sm:px-20">
-            <h1 class="mx-auto my-2 sm:my-4 text-[#fff] text-3xl md:text-5xl font-bold">Level up your desk</h1>
-            <h3 class="mx-auto my-2 sm:my-4 text-[#fff] text-xl md:text-2xl text-center xs:leading-5 md:leading-10">Make your desk beautiful and organized. Post a picture to social media and watch it 
-                get more likes than life-changing announcements. Reflect on the shallow nature of existence. 
-                At least you have a really nice desk setup.</h3>
-            <button class="mx-auto w-[80%] sm:w-[35%] my-2 sm:my-4 px-4 py-2 text-lg md:text-xl  bg-white rounded-md text-[#000]">Shop Workspace</button>
-        </div> 
-    </section>
-
-    <!-- shop by collection -->
-     <div class="h-auto w-[90%] mx-auto my-20">
-        <h3 class="my-4 text-2xl font-bold">Shop by collection</h3>
-        <p class="my-4 text-xl">
-            Each season, we collaborate with world-class designers to create a collection
-            inspired by the natural world. 
-        </p>
-        <div class="flex flex-row flex-wrap justify-between space-x-2 my-4">
-            <div class="w-full sm:w-[30%] xs:my-2">
-                <img src="https://tailwindui.com/img/ecommerce-images/home-page-01-collection-01.jpg" class="w-full h-56 sm:h-72 object-center object-cover"/>
-                <h3 class="text-xl my-4 font-semibold">Handcrafted Collection</h3>
-                <p class="text-left">
-                    Keep your phone, keys, and wallet together, so you can lose everything at once.
-                </p>
+        <!-- Shop by Category -->
+         <section class="relative w-[90%] mx-auto my-20">
+            <div class="sm:flex sm:flex-row sm:justify-between">
+                <h3 class="my-4 text-xl sm:text-2xl font-bold">Shop by Category</h3>
+                <h3 class="absolute sm:static top-[100%] left-0 my-4 text-sm font-bold text-emerald-600"><a class="decoration-emerald-600" href="#">Browse all categories</a></h3>
             </div>
-            <div class="w-full sm:w-[30%] xs:my-2">
-                <img src="https://tailwindui.com/img/ecommerce-images/home-page-01-collection-02.jpg" class="w-full h-56 sm:h-72 object-center object-cover"/>
-                <h3 class="text-xl my-4 font-semibold">Organized Desk Collection</h3>
-                <p class="text-left">
-                    The rest of the house will still be a mess, but your desk will look great.
-                </p>
+            
+            <div class="w-auto my-4 flex flex-row justify-between gap-2 text-white overflow-x-scroll">
+                <div style="background-image:url('https://tailwindui.com/img/ecommerce-images/home-page-01-category-01.jpg');"
+                class="h-64 w-[200px] shrink-0 border border-gray-300 bg-cover bg-center text-center rounded-sm">    
+                   <span class="relative top-[90%] text-slate-600 font-semibold">New Arrivals</span>
+               </div>
+                <div style="background-image:url('https://tailwindui.com/img/ecommerce-images/home-page-01-category-02.jpg');"
+                 class="h-64 w-[200px] shrink-0 border border-gray-300 bg-cover bg-center text-center rounded-sm">
+                    <span class="relative top-[90%] text-slate-600 font-semibold">Productivity</span>
+                </div>
+                <div style="background-image: url('https://tailwindui.com/img/ecommerce-images/home-page-01-category-04.jpg');"
+                 class="h-64 w-[200px] shrink-0 border border-gray-300 bg-cover bg-center text-center rounded-sm">
+                    <span class="relative top-[90%] text-slate-600 font-semibold">Workspace</span>
+                </div>
+                <div style="background-image: url('https://tailwindui.com/img/ecommerce-images/home-page-01-category-05.jpg');"
+                 class="h-64 w-[200px] shrink-0 border border-gray-300 bg-cover bg-center text-center rounded-sm">
+                    <span class="relative top-[90%] text-slate-600 font-semibold">Accessories</span>
+                </div>
+                <div style="background-image: url('https://tailwindui.com/img/ecommerce-images/home-page-01-category-03.jpg');"
+                 class="h-64 w-[200px] shrink-0 border border-gray-300 bg-cover bg-center text-center rounded-sm">
+                    <span class="relative top-[90%] text-slate-600 font-semibold">Sale</span>
+                </div>
             </div>
-            <div class="w-full sm:w-[30%] xs:my-2">
-                <img src="https://tailwindui.com/img/ecommerce-images/home-page-01-collection-03.jpg" class="w-full h-56 sm:h-72 object-center object-cover"/>
-                <h3 class="text-xl my-4 font-semibold">Focus Collection</h3>
-                <p class="text-left">
-                    Be more productive than enterprise project managers with a single piece of paper.
-                </p>
-            </div>
-        </div>        
-     </div>
-
-      <!-- Simple productivity hero -->
-      <section class="relative w-[90%] mx-auto my-20">
-        <img src="https://rb.gy/tozt5d" class="w-full h-[450px] sm:h-[550px]  object-fit"/>
-         <div class="absolute top-2/4 -translate-y-2/4 w-full flex flex-col mx-auto py-4 px-4 sm:px-20">
-            <h1 class="mx-auto my-2 sm:my-4 text-[#fff] text-3xl sm:text-5xl font-bold">Simple productivity</h1>
-            <h3 class="mx-auto my-2 sm:my-4 text-[#fff] text-xl sm:text-2xl text-center xs:leading-5 md:leading-10">Endless tasks, limited hours, a single piece of paper. 
-                Not really a haiku, but we're doing our best here. No kanban boards, burndown charts, or tangled flowcharts with our Focus system. Just the undeniable urge to fill empty circles.
-            </h3>
-            <button class="mx-auto w-[80%] sm:w-[25%] my-2 sm:my-4 px-4 py-2 text-lg md:text-xl  bg-white rounded-md text-[#000]">Shop Focus</button>
-        </div> 
-        <!-- fixed up button -->
+         </section>
         
-    </section>
-
-    <!-- people section -->
-    <section class="w-[90%] mx-auto my-20 flex flex-col space-y-4 sm:space-y-0 sm:flex-row sm:justify-between flex-wrap">
-        <div class="w-[90%] sm:w-[30%] rounded border-2 border-gray-300 mx-auto p-2">
-            <p>
-                <i class="fa-solid fa-quote-left"></i>
-                My order arrived super quickly. The product is even better than I hoped it would be. Very happy customer over here!
-                <i class="fa-solid fa-quote-right"></i>
-            </p>
-            <div class="flex justify-between">
-                <span class="w-[70%] py-4">Sarah Peters, New Orleans</span>
-                <img class="h-16 w-16 rounded-full" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-            </div>
-          
-        </div>
-        <div class="w-[90%] sm:w-[30%] rounded border-2 border-gray-300 mx-auto p-2">
-            <p>
-                <i class="fa-solid fa-quote-left"></i>
-                I had to return a purchase that didn’t fit. The whole process was so simple that I ended up ordering two new items!
-                <i class="fa-solid fa-quote-right"></i>
-            </p>
-            <div class="flex justify-between">
-                <span class="w-[70%] py-4">Kelly McPherson, Chicago</span>
-                <img class=" h-16 w-16 rounded-full" src="https://plus.unsplash.com/premium_photo-1664203068007-52240d0ca48f?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZmFjZXxlbnwwfHwwfHx8MA%3D%3D" />
-            </div>
-        </div>
-        <div class="w-[90%] sm:w-[30%] rounded border-2 border-gray-300 mx-auto p-2">
-            <p>
-                <i class="fa-solid fa-quote-left"></i>
-                Now that I’m on holiday for the summer, I’ll probably order a few more shirts. It’s just so convenient, and I know the quality will always be there.          
-                <i class="fa-solid fa-quote-right"></i>
-            </p>
-            <div class="flex justify-between">
-                <span class="w-[70%] py-4">Chris Paul, Phoenix</span>
-                <img class="h-16 w-16 rounded-full" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-     <footer class="h-auto bg-gray-950 text-white px-2">        
-        <div class="mx-2  border-b border-slate-600 mt-8 mb-4">
-            <div class="flex flex-row justify-around flex-wrap text-center">
-                <div class="basis-1/2 sm:basis-1/4">
-                    <p class="my-6">
-                        Shop
-                    </p>
-                    <p class="page-link">
-                        <a href="#">Bags</a>
-                    </p>
-                    <p class="page-link">
-                        <a href="#">Tees</a>
-                    </p>
-                    <p class="page-link">
-                        <a href="#">Objects</a>
-                    </p>
-                    <p class="page-link">
-                        <a href="#">Home Goods</a>
-                    </p>
-                    <p class="page-link">
-                        <a href="#">Accessories</a>
-                    </p>
     
+        <!-- desk hero -->
+        <section id="desk-hero-section" class="relative w-[90%] mx-auto my-20">
+            <img src="https://t.ly/-DR7f" class="w-full h-[450px] sm:h-[550px]  object-fit brightness-50"/>
+             <div class="absolute top-2/4 -translate-y-2/4 w-full flex flex-col mx-auto py-4 px-4 sm:px-20">
+                <h1 class="myh1 mx-auto my-2 sm:my-4 text-[#fff] text-3xl md:text-5xl font-bold">Level up your desk</h1>
+                <h3 class="mx-auto my-2 sm:my-4 text-[#fff] text-xl md:text-2xl text-center xs:leading-5 md:leading-10">Make your desk beautiful and organized. Post a picture to social media and watch it 
+                    get more likes than life-changing announcements. Reflect on the shallow nature of existence. 
+                    At least you have a really nice desk setup.</h3>
+                <button class="mx-auto w-[80%] sm:w-[35%] my-2 sm:my-4 px-4 py-2 text-lg md:text-xl  bg-white rounded-md text-[#000]">Shop Workspace</button>
+                <div id="up-button" class="z-30 fixed top-[80vh] left-[85%] sm:left-[90%] p-2 sm:p-3 bg-emerald-600 text-lg rounded-full">
+                    <a href="#main-hero"><i class="fa-solid fa-arrow-up fa-xl"></i></a>
                 </div>
-                <div class="basis-1/2 sm:basis-1/4">
-                    <p class="my-6">
-                        Company
-                    </p>
-                    <p class="page-link">
-                        <a href="#">Who we are</a>
-                    </p>
-                    <p class="page-link">
-                        <a href="#">Sustainability</a>
-                    </p>
-                    <p class="page-link">
-                        <a href="#">Press</a>
-                    </p>
-                    <p class="page-link">
-                        <a href="#">Careers</a>
-                    </p>
-                    <p class="page-link">
-                        <a href="#">Terms & Conditions</a>
-                    </p>
-                    <p class="page-link">
-                        <a href="#">Privacy</a>
+            </div> 
+        </section>
+    
+        <!-- shop by collection -->
+         <div class="h-auto w-[90%] mx-auto my-20">
+            <h3 class="my-4 text-2xl font-bold">Shop by collection</h3>
+            <p class="my-4 text-xl">
+                Each season, we collaborate with world-class designers to create a collection
+                inspired by the natural world. 
+            </p>
+            <div class="flex flex-row flex-wrap justify-between space-x-2 my-4">
+                <div class="w-full sm:w-[30%] xs:my-2">
+                    <img src="https://tailwindui.com/img/ecommerce-images/home-page-01-collection-01.jpg" class="w-full h-56 sm:h-72 object-center object-cover"/>
+                    <h3 class="text-xl my-4 font-semibold">Handcrafted Collection</h3>
+                    <p class="text-left">
+                        Keep your phone, keys, and wallet together, so you can lose everything at once.
                     </p>
                 </div>
-                <div class="basis-1/2 sm:basis-1/4">
-                    <p class="my-6">
-                        Account
+                <div class="w-full sm:w-[30%] xs:my-2">
+                    <img src="https://tailwindui.com/img/ecommerce-images/home-page-01-collection-02.jpg" class="w-full h-56 sm:h-72 object-center object-cover"/>
+                    <h3 class="text-xl my-4 font-semibold">Organized Desk Collection</h3>
+                    <p class="text-left">
+                        The rest of the house will still be a mess, but your desk will look great.
                     </p>
-                    <p class="page-link">
-                        <a href="#">Manage Account</a>
-                    </p>
-                    <p class="page-link">
-                        <a href="#">Returns & Exchanges</a>
-                    </p>
-                    <p class="page-link">
-                        <a href="#">Redeem a Gift Card</a>
-                    </p>               
                 </div>
-                <div class="basis-1/2 sm:basis-1/4">
-                    <p class="my-6">
-                        Connect
+                <div class="w-full sm:w-[30%] xs:my-2">
+                    <img src="https://tailwindui.com/img/ecommerce-images/home-page-01-collection-03.jpg" class="w-full h-56 sm:h-72 object-center object-cover"/>
+                    <h3 class="text-xl my-4 font-semibold">Focus Collection</h3>
+                    <p class="text-left">
+                        Be more productive than enterprise project managers with a single piece of paper.
                     </p>
-                    <p class="page-link">
-                        <a href="#">Contact Us</a>
-                    </p>
-                    <p class="page-link">
-                        <a href="#">Facebook</a>
-                    </p>
-                    <p class="page-link">
-                        <a href="#">Instagram</a>
-                    </p>    
-                    <p class="page-link">
-                        <a href="#">Pinterest</a>
-                    </p>
+                </div>
+            </div>        
+         </div>
+    
+          <!-- Simple productivity hero -->
+          <section class="relative w-[90%] mx-auto my-20">
+            <img src="https://rb.gy/tozt5d" class="w-full h-[450px] sm:h-[550px]  object-fit"/>
+             <div class="absolute top-2/4 -translate-y-2/4 w-full flex flex-col mx-auto py-4 px-4 sm:px-20">
+                <h1 class="mx-auto my-2 sm:my-4 text-[#fff] text-3xl sm:text-5xl font-bold">Simple productivity</h1>
+                <h3 class="mx-auto my-2 sm:my-4 text-[#fff] text-xl sm:text-2xl text-center xs:leading-5 md:leading-10">Endless tasks, limited hours, a single piece of paper. 
+                    Not really a haiku, but we're doing our best here. No kanban boards, burndown charts, or tangled flowcharts with our Focus system. Just the undeniable urge to fill empty circles.
+                </h3>
+                <button class="mx-auto w-[80%] sm:w-[25%] my-2 sm:my-4 px-4 py-2 text-lg md:text-xl  bg-white rounded-md text-[#000]">Shop Focus</button>
+            </div> 
+            <!-- fixed up button -->
+            
+        </section>
+    
+        <!-- people section -->
+        <section class="w-[90%] mx-auto my-20 flex flex-col space-y-4 sm:space-y-0 sm:flex-row sm:justify-between flex-wrap">
+            <div class="w-[90%] sm:w-[30%] rounded border-2 border-gray-300 mx-auto p-2">
+                <p>
+                    <i class="fa-solid fa-quote-left"></i>
+                    My order arrived super quickly. The product is even better than I hoped it would be. Very happy customer over here!
+                    <i class="fa-solid fa-quote-right"></i>
+                </p>
+                <div class="flex justify-between">
+                    <span class="w-[70%] py-4">Sarah Peters, New Orleans</span>
+                    <img class="h-16 w-16 rounded-full" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                </div>
+              
+            </div>
+            <div class="w-[90%] sm:w-[30%] rounded border-2 border-gray-300 mx-auto p-2">
+                <p>
+                    <i class="fa-solid fa-quote-left"></i>
+                    I had to return a purchase that didn’t fit. The whole process was so simple that I ended up ordering two new items!
+                    <i class="fa-solid fa-quote-right"></i>
+                </p>
+                <div class="flex justify-between">
+                    <span class="w-[70%] py-4">Kelly McPherson, Chicago</span>
+                    <img class=" h-16 w-16 rounded-full" src="https://plus.unsplash.com/premium_photo-1664203068007-52240d0ca48f?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZmFjZXxlbnwwfHwwfHx8MA%3D%3D" />
                 </div>
             </div>
-            <div class="my-4">
-                <p class="my-4">Sign up for our newsletter</p>
-                <p class="mb-2">The latest deals and savings, sent to your inbox weekly.</p>
-                <form>
-                    <input type="text" class="rounded-sm w-52 sm:w-72" />
-                    <button class="mx-4 p-1 bg-emerald-600 rounded-sm w-20 cursor-pointer">Sign Up</button>
-                </form>
+            <div class="w-[90%] sm:w-[30%] rounded border-2 border-gray-300 mx-auto p-2">
+                <p>
+                    <i class="fa-solid fa-quote-left"></i>
+                    Now that I’m on holiday for the summer, I’ll probably order a few more shirts. It’s just so convenient, and I know the quality will always be there.          
+                    <i class="fa-solid fa-quote-right"></i>
+                </p>
+                <div class="flex justify-between">
+                    <span class="w-[70%] py-4">Chris Paul, Phoenix</span>
+                    <img class="h-16 w-16 rounded-full" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                </div>
             </div>
-        </div>
-        <div class="mt-4 mb-8">
-            <p>Copyright © 2021 Your Company, Inc.</p>
-        </div>
-     </footer>
+        </section>
+    
+        <!-- Footer -->
+         <footer class="h-auto bg-gray-950 text-white px-2">        
+            <div class="mx-2  border-b border-slate-600 mt-8 mb-4">
+                <div class="flex flex-row justify-around flex-wrap text-center">
+                    <div class="basis-1/2 sm:basis-1/4">
+                        <p class="my-6">
+                            Shop
+                        </p>
+                        <p class="page-link">
+                            <a href="#">Bags</a>
+                        </p>
+                        <p class="page-link">
+                            <a href="#">Tees</a>
+                        </p>
+                        <p class="page-link">
+                            <a href="#">Objects</a>
+                        </p>
+                        <p class="page-link">
+                            <a href="#">Home Goods</a>
+                        </p>
+                        <p class="page-link">
+                            <a href="#">Accessories</a>
+                        </p>
+        
+                    </div>
+                    <div class="basis-1/2 sm:basis-1/4">
+                        <p class="my-6">
+                            Company
+                        </p>
+                        <p class="page-link">
+                            <a href="#">Who we are</a>
+                        </p>
+                        <p class="page-link">
+                            <a href="#">Sustainability</a>
+                        </p>
+                        <p class="page-link">
+                            <a href="#">Press</a>
+                        </p>
+                        <p class="page-link">
+                            <a href="#">Careers</a>
+                        </p>
+                        <p class="page-link">
+                            <a href="#">Terms & Conditions</a>
+                        </p>
+                        <p class="page-link">
+                            <a href="#">Privacy</a>
+                        </p>
+                    </div>
+                    <div class="basis-1/2 sm:basis-1/4">
+                        <p class="my-6">
+                            Account
+                        </p>
+                        <p class="page-link">
+                            <a href="#">Manage Account</a>
+                        </p>
+                        <p class="page-link">
+                            <a href="#">Returns & Exchanges</a>
+                        </p>
+                        <p class="page-link">
+                            <a href="#">Redeem a Gift Card</a>
+                        </p>               
+                    </div>
+                    <div class="basis-1/2 sm:basis-1/4">
+                        <p class="my-6">
+                            Connect
+                        </p>
+                        <p class="page-link">
+                            <a href="#">Contact Us</a>
+                        </p>
+                        <p class="page-link">
+                            <a href="#">Facebook</a>
+                        </p>
+                        <p class="page-link">
+                            <a href="#">Instagram</a>
+                        </p>    
+                        <p class="page-link">
+                            <a href="#">Pinterest</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="my-4">
+                    <p class="my-4">Sign up for our newsletter</p>
+                    <p class="mb-2">The latest deals and savings, sent to your inbox weekly.</p>
+                    <form>
+                        <input type="text" class="rounded-sm w-52 sm:w-72" />
+                        <button class="mx-4 p-1 bg-emerald-600 rounded-sm w-20 cursor-pointer">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+            <div class="mt-4 mb-8">
+                <p>Copyright © 2021 Your Company, Inc.</p>
+            </div>
+         </footer>
+    <!-- </div>
+</div> -->
      <script src="shop.js"></script>
 </body>

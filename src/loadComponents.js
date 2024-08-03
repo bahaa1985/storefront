@@ -24,3 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
     loadHTML('shop','shop.html');
     // loadHTML('footer', 'footer.html');
 });
+
+
+
+
