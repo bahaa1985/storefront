@@ -10,7 +10,7 @@ const divContent=document.querySelector("#smooth-content")
 ScrollSmoother.create({
     wraper:bodyWraper,
     content:divContent,
-    smooth: 2,
+    smooth: 1.5,
     effects: true,
 });
 
@@ -18,11 +18,14 @@ ScrollSmoother.create({
 gsap.to(upButton,{
     scrollTrigger:{
         trigger:deskSection,
-        start:"top top",
-       scrub:true,
+        start:"top top",     
+        // end:"bottom top",
+        scrub:true,
     },
+    // top:()=>{deskSection.clientTop * 80 / 100  + 'px'},
     position:'fixed',
+    display:'block',
     onComplete:()=>{console.log('is triggered');}
 })
 
-ScrollTrigger.refresh();
+// ScrollTrigger.refresh();
