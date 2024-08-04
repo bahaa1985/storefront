@@ -1,16 +1,5 @@
 gsap.registerPlugin(ScrollTrigger,ScrollSmoother);
 
-// smooth scroll
-const bodyWraper=document.querySelector("#smooth-wraper");
-const divContent=document.querySelector("#smooth-content")
-
-ScrollSmoother.create({
-    wraper:bodyWraper,
-    content:divContent,
-    smooth: 1.5,
-    effects: true,
-});
-
 // scroll trigger for up button displaying
 const upButton=document.querySelector("#up-button");
 const deskSection=document.querySelector("#desk-hero-section");
@@ -21,29 +10,58 @@ gsap.to(upButton,{
         // end:"bottom top",
         scrub:true,
     },
-    // top:()=>{deskSection.clientTop * 80 / 100  + 'px'},
     position:'fixed',
     display:'block',
     onComplete:()=>{console.log('is triggered');}
 })
 
-//Brightness:
-function brightnessGSAP(element){
-    let tween=gsap.fromTo(element,{filter:"brightness(0.75)"},{
-        filter: "brightness(1)",duration:0.5
+// Brightness function
+function createBrightnessTween(element,brightness) {
+    return gsap.to(element, {
+        filter: `brightness(${brightness})`,
+        duration: 0.5,
+        paused: true // Create tween in paused state
     });
-    return tween;
 }
 
-const categories=document.querySelectorAll(".category");
-
+const categories = document.querySelectorAll(".category");
+//brightness gsap effect for catregories section:
 categories.forEach(category => {
-    category.addEventListener("mouseover",()=>{
-        brightnessGSAP(category).play();
-    })
+    // Create and store tween for each category
+    const tween = createBrightnessTween(category,1);
 
-    category.addEventListener("mouseleave",()=>{
-        brightnessGSAP(category).reverse();
-    })
-   
+    category.addEventListener("mouseover", () => {
+        tween.play();
+    });
+
+    category.addEventListener("mouseleave", () => {
+        tween.reverse();
+    });
+});
+
+
+const collections=document.querySelectorAll(".collection");
+//brightness gsap effect for collections section:
+collections.forEach(collection => {
+    
+    const tween = createBrightnessTween(collection,1.1);
+
+    collection.addEventListener("mouseover", () => {
+        tween.play();
+    });
+
+    collection.addEventListener("mouseleave", () => {
+        tween.reverse();
+    });
+});
+
+// smooth scroll
+const bodyWraper=document.querySelector("#smooth-wraper");
+const divContent=document.querySelector("#smooth-content")
+
+ScrollSmoother.create({
+    wraper:bodyWraper,
+    content:divContent,
+    smooth: 1.5,
+    effects: true,
 });

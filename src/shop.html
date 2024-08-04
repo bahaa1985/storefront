@@ -28,7 +28,8 @@
          <section class="relative w-[90%] mx-auto my-20">
             <div class="sm:flex sm:flex-row sm:justify-between">
                 <h3 class="my-4 text-xl sm:text-2xl font-bold">Shop by Category</h3>
-                <h3 class="absolute sm:static top-[100%] left-0 my-4 text-sm font-bold text-emerald-600"><a class="decoration-emerald-600" href="#">Browse all categories</a></h3>
+                <h3 class="absolute sm:static top-[100%] left-0 my-4 text-sm font-bold text-emerald-600">
+                    <a class="decoration-emerald-600" href="#">Browse all categories</a><i class="fa-solid fa-arrow-right text-emerald-600"></i></h3>
             </div>
             
             <div class="w-auto my-4 flex flex-row justify-between gap-2 text-white overflow-x-scroll">
@@ -58,13 +59,7 @@
     
         <!-- desk hero -->
         <section id="desk-hero-section" class="relative w-[90%] mx-auto my-20">
-            <div class="w-full flex flex-row justify-evenly">
-                <!-- <div class="overflow-x-hidden">
-                    <img src="https://t.ly/-DR7f" class="relative w-[600px] h-[450px] sm:h-[550px] object-fit left-[300px]  brightness-50"/>
-                </div>
-                <div class="overflow-x-hidden">
-                    <img src="https://t.ly/-DR7f" class="relative w-[600px] h-[450px] sm:h-[550px] object-fit left-[-300px]   brightness-50"/>
-                </div> -->
+            <div class="w-full flex flex-row justify-evenly">                
             </div>
             <img src="https://t.ly/-DR7f" class="w-full h-[450px] sm:h-[550px]  object-fit brightness-50"/>
              <div class="absolute top-2/4 -translate-y-2/4 w-full flex flex-col mx-auto py-4 px-4 sm:px-20">
@@ -85,21 +80,21 @@
             </p>
             <div class="flex flex-row flex-wrap justify-between space-x-2 my-4">
                 <div class="w-full sm:w-[30%] xs:my-2">
-                    <img src="https://tailwindui.com/img/ecommerce-images/home-page-01-collection-01.jpg" class="w-full h-56 sm:h-72 object-center object-cover"/>
+                    <img src="https://tailwindui.com/img/ecommerce-images/home-page-01-collection-01.jpg" class="collection w-full h-56 sm:h-72 object-center object-cover cursor-pointer brightness-90"/>
                     <h3 class="text-xl my-4 font-semibold">Handcrafted Collection</h3>
                     <p class="text-left">
                         Keep your phone, keys, and wallet together, so you can lose everything at once.
                     </p>
                 </div>
                 <div class="w-full sm:w-[30%] xs:my-2">
-                    <img src="https://tailwindui.com/img/ecommerce-images/home-page-01-collection-02.jpg" class="w-full h-56 sm:h-72 object-center object-cover"/>
+                    <img src="https://tailwindui.com/img/ecommerce-images/home-page-01-collection-02.jpg" class="collection w-full h-56 sm:h-72 object-center object-cover cursor-pointer brightness-90"/>
                     <h3 class="text-xl my-4 font-semibold">Organized Desk Collection</h3>
                     <p class="text-left">
                         The rest of the house will still be a mess, but your desk will look great.
                     </p>
                 </div>
                 <div class="w-full sm:w-[30%] xs:my-2">
-                    <img src="https://tailwindui.com/img/ecommerce-images/home-page-01-collection-03.jpg" class="w-full h-56 sm:h-72 object-center object-cover"/>
+                    <img src="https://tailwindui.com/img/ecommerce-images/home-page-01-collection-03.jpg" class="collection w-full h-56 sm:h-72 object-center object-cover cursor-pointer brightness-90"/>
                     <h3 class="text-xl my-4 font-semibold">Focus Collection</h3>
                     <p class="text-left">
                         Be more productive than enterprise project managers with a single piece of paper.
@@ -117,9 +112,7 @@
                     Not really a haiku, but we're doing our best here. No kanban boards, burndown charts, or tangled flowcharts with our Focus system. Just the undeniable urge to fill empty circles.
                 </h3>
                 <button class="mx-auto w-[80%] sm:w-[25%] my-2 sm:my-4 px-4 py-2 text-lg md:text-xl  bg-white rounded-md text-[#000]">Shop Focus</button>
-            </div> 
-            <!-- fixed up button -->
-            
+            </div>           
         </section>
     
         <!-- people section -->
@@ -163,7 +156,7 @@
         <!-- Footer -->
          <footer class="h-auto bg-gray-950 text-white px-2 py-2">        
             <div class="mx-2  border-b border-slate-600 my-4">
-                <div class="flex flex-row justify-between sm:justify-around flex-wrap text-center">
+                <div class="flex flex-row justify-between sm:justify-start sm:space-x-8 md:space-x-14 flex-wrap text-center sm:text-left">
                     <div class="basis-1/2 sm:basis-1/5">
                         <p class="my-6">
                             Shop
@@ -253,7 +246,5 @@
                 <p>Copyright © 2024 Your Company, Inc.</p>
             </div>
          </footer>
-    <!-- </div>
-</div> -->
      <script src="shop.js"></script>
 </body>
